@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quies. — Your private space to think.</title>
+  <meta name="description" content="A journal for thinking, written by you, kept by your phone. On-device. No accounts.">
+  <meta property="og:title" content="Quies. — Your private space to think.">
+  <meta property="og:description" content="A journal for thinking, written by you, kept by your phone. On-device. No accounts.">
+  <meta property="og:type" content="website">
+  <style>
+    :root {
+      --midnight: #0A1628;
+      --deep-navy: #061021;
+      --ocean: #142339;
+      --gold: #C9A961;
+      --pale-gold: #E8D4A0;
+      --cream: #F5EFE4;
+      --pearl: #C5BDA8;
+      --mist: #6B7080;
+      --sage: #8FAF9A;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--midnight);
+      color: var(--cream);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-weight: 300;
+      line-height: 1.6;
+    }
+    .hero {
+      min-height: 92vh;
+      padding: 64px 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background:
+        radial-gradient(ellipse at top, rgba(201, 169, 97, 0.06), transparent 60%),
+        var(--midnight);
+    }
+    .brand {
+      font-size: 14px;
+      letter-spacing: 1.8px;
+      text-transform: uppercase;
+      color: var(--pale-gold);
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+    .headline {
+      font-family: "Playfair Display", Georgia, serif;
+      font-weight: 400;
+      font-size: clamp(36px, 5.5vw, 64px);
+      color: var(--cream);
+      max-width: 14ch;
+      line-height: 1.15;
+    }
+    .lede {
+      font-size: clamp(17px, 2vw, 20px);
+      color: var(--pearl);
+      max-width: 32ch;
+      margin-top: 28px;
+      line-height: 1.55;
+    }
+    .underline {
+      width: 64px;
+      height: 3px;
+      background: var(--gold);
+      margin-top: 40px;
+      opacity: 0.75;
+    }
+    .section {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 96px 24px;
+    }
+    .section h2 {
+      font-family: "Playfair Display", Georgia, serif;
+      font-weight: 400;
+      font-size: clamp(26px, 3.5vw, 36px);
+      color: var(--cream);
+      margin-bottom: 18px;
+    }
+    .section p {
+      color: var(--pearl);
+      font-size: 17px;
+      margin-top: 14px;
+    }
+    .kicker {
+      font-size: 13px;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      color: var(--mist);
+      margin-bottom: 12px;
+      font-weight: 500;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 28px;
+      margin-top: 40px;
+    }
+    .card {
+      background: var(--ocean);
+      padding: 28px 24px;
+      border-radius: 12px;
+      border-top: 2px solid var(--gold);
+    }
+    .card h3 {
+      font-family: "Playfair Display", Georgia, serif;
+      font-weight: 400;
+      font-size: 22px;
+      color: var(--cream);
+      margin-bottom: 8px;
+    }
+    .card p {
+      color: var(--pearl);
+      font-size: 15px;
+      margin-top: 6px;
+      line-height: 1.55;
+    }
+    .pact {
+      background: var(--ocean);
+      border-left: 3px solid var(--gold);
+      padding: 28px 32px;
+      margin-top: 32px;
+      border-radius: 6px;
+    }
+    .pact p { color: var(--cream); margin-top: 8px; }
+    .pact .label {
+      font-size: 13px;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      color: var(--pale-gold);
+      font-weight: 500;
+      margin-bottom: 4px;
+    }
+    .cta {
+      text-align: center;
+      padding: 64px 24px 96px;
+    }
+    .cta-btn {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--midnight);
+      padding: 16px 36px;
+      font-weight: 500;
+      letter-spacing: 0.4px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    .cta-btn:hover { opacity: 0.92; }
+    .cta-sub {
+      color: var(--mist);
+      font-size: 13px;
+      margin-top: 18px;
+      letter-spacing: 0.4px;
+    }
+    footer {
+      padding: 32px 24px 48px;
+      text-align: center;
+      border-top: 1px solid rgba(245, 239, 228, 0.06);
+      font-size: 13px;
+      color: var(--mist);
+    }
+    footer a {
+      color: var(--pearl);
+      text-decoration: none;
+      margin: 0 8px;
+    }
+    footer a:hover { color: var(--pale-gold); }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="brand">Quies.</div>
+    <h1 class="headline">Your private space to think.</h1>
+    <p class="lede">A journal for thinking, written by you, kept by your phone.</p>
+    <div class="underline"></div>
+  </header>
+
+  <section class="section">
+    <div class="kicker">The promise</div>
+    <h2>Yours, only.</h2>
+    <p>Every entry you make in Quies stays on your device, encrypted with a key your phone holds. We never see it. There is no Quies account. There is no server we can search.</p>
+    <div class="pact">
+      <div class="label">Privacy Receipt</div>
+      <p>Inside the app, a chronological ledger shows you every data event Quies has performed on your behalf. The marketing promise is verified in code.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="kicker">The practice</div>
+    <h2>Four tabs.</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Today</h3>
+        <p>A daily question and the small things from your day. Write or speak — your choice.</p>
+      </div>
+      <div class="card">
+        <h3>Echoes</h3>
+        <p>Everything you have written or spoken, chronological. Yours to read back any time.</p>
+      </div>
+      <div class="card">
+        <h3>Reflect</h3>
+        <p>Patterns from your own past, plus a CBT toolkit when you want a structure.</p>
+      </div>
+      <div class="card">
+        <h3>Ask</h3>
+        <p>A reflective companion grounded in your own history. On-device. Not therapy.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="kicker">If it gets hard</div>
+    <h2>We will not look away.</h2>
+    <p>If you write something heavy, Quies will gently surface help — a crisis line, a place to talk to a person. It will never be behind a paywall. It will never be a popup that takes your words from you.</p>
+    <p>Quies is not a replacement for a therapist. If you are in immediate danger, please call 911 in the United States, or your local emergency line. For mental health crises, dial 988 (US/Canada).</p>
+  </section>
+
+  <div class="cta">
+    <a class="cta-btn" href="#">Coming soon to the App Store</a>
+    <div class="cta-sub">Available in 2026 · Free with optional Pro · 7-day no-card trial</div>
+  </div>
+
+  <footer>
+    <p>Quies. is a product of Mas Dinero Ventures LLC.</p>
+    <p>
+      <a href="/privacy/">Privacy</a> ·
+      <a href="/support/">Support</a> ·
+      <a href="/terms/">Terms</a>
+    </p>
+  </footer>
+</body>
+</html>
